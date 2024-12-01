@@ -1,0 +1,24 @@
+<div *ngIf="isBrowser" class="container">
+  <div class="header">
+    <input
+      type="text"
+      [(ngModel)]="searchQuery"
+      (input)="onSearchQueryChanged()"
+      placeholder="Search..."
+      class="search-input"
+    />
+    <button (click)="addRow()" class="action-btn">Add Row</button>
+  </div>
+
+  <!-- AG Grid Component -->
+  <ag-grid-angular
+    [gridOptions]="gridOptions"
+    [columnDefs]="columnDefs"
+    [rowData]="rowData"
+    class="ag-theme-alpine ag-grid-container"
+    [domLayout]="'autoHeight'"
+    (cellValueChanged)="onCellValueChanged()"
+  ></ag-grid-angular>
+
+  <button [disabled]="!isSubmitEnabled" (click)="onSubmit()" class="submit-btn">Submit</button>
+</div>

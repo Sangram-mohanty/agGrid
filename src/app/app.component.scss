@@ -1,0 +1,65 @@
+/* Center the whole container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+  text-align: center;
+}
+
+/* Style the header section */
+.header {
+  margin-bottom: 20px;
+}
+
+/* Style for the input field */
+.search-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Style for the action button */
+.action-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: #45a049;
+}
+
+/* Style for the AG Grid container */
+.ag-grid-container {
+  width: 100%;
+  max-width: 600px;
+  /* Adjust the max width of the grid */
+  margin: 0 auto;
+  /* Center the grid */
+}
+
+/* Style for the Submit button */
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
